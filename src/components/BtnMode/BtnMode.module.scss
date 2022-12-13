@@ -1,0 +1,7 @@
+.btnMode {
+  @apply text-bodyBg text-[18px] bg-inherit p-[4px_20px] rounded-[10px] top-[90%] left-[85%] border-[2.5px] border-bodyBg duration-300;
+
+  &:hover {
+    @apply bg-textColor;
+  }
+}

@@ -1,0 +1,31 @@
+.form {
+  @apply bg-bodyBg p-10 rounded-[20px] mb-[30px] flex gap-[20px] duration-300;
+
+  
+
+  .addDo, .adBtn {
+    @apply border-[3px] border-bgHead rounded-[20px] p-[8px_15px] duration-300;
+  }
+
+  .addDo {
+    @apply flex-[1_1_100px] outline-bgHead text-bgHead;
+
+    &::placeholder {
+      @apply text-bgHead;
+    }
+  }
+
+  .adBtn {
+    @apply text-textColor font-semibold duration-300;
+
+    &:hover {
+      @apply bg-bgHead;
+    }
+  }
+
+  @media screen and (max-width: 515px) {
+    & {
+      @apply flex-col;
+    }
+  }
+}

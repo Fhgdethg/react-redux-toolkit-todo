@@ -1,0 +1,25 @@
+@import './styles/variables.scss';
+
+.all {
+  .wrapper {
+    @apply bg-bodyBg font-openSans duration-300 pb-[20px] min-h-[100vh];
+  }
+
+  .header {
+    @apply p-[18px] bg-bgHead flex justify-between items-center duration-300;
+
+    h1 {
+      @apply font-bold text-[32px] text-logoColor duration-300;
+    }
+  }
+
+  .main {
+    .container {
+      @apply m-[0_auto] max-w-[1410px];
+
+      .section {
+        @apply p-[30px_25px] m-[30px_18px] rounded-[30px] bg-bgHead duration-300;
+      }
+    }
+  }
+}

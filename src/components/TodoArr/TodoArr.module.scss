@@ -1,0 +1,9 @@
+.todosWrapper {
+  &>div {
+    @apply flex flex-col gap-[15px];
+  }
+
+  .onError {
+    @apply text-textColor font-[27px] font-[700] duration-300;
+  }
+}

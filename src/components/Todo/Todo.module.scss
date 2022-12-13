@@ -1,0 +1,57 @@
+.todo {
+  @apply flex items-center bg-bodyBg p-[20px] text-textColor rounded-[15px] text-[18px] overflow-auto justify-between duration-300;
+
+  &Left {
+    @apply flex items-center;
+
+    .completed {
+      @apply line-through;
+    }
+
+    .textDo {
+      @apply ml-[25px];
+    }
+
+    label {
+      @apply relative flex items-center justify-center;
+
+      .radio {
+        @apply appearance-none w-[20px] h-[20px] border-[1.5px] border-bgHead rounded-[30%] border-dashed duration-300 cursor-pointer;
+      }
+
+      .activeJeneral {
+        @apply bg-bgHead w-[10px] h-[10px] rounded-[30%] absolute duration-300;
+      }
+
+      .active {
+        @apply hidden;
+      }
+
+      .radio:checked ~ .active {
+        @apply block;
+      }
+    }
+  }
+
+  .deleteBtn {
+    @apply border-[1.5px] border-dashed border-[textColor] p-[1px_12px] rounded-[10px] duration-300 ml-[10px];
+
+    &:hover {
+      @apply bg-bgHead duration-300;
+    }
+  }
+
+  @media screen and (max-width: 515px) {
+    & {
+      @apply flex-col items-start;
+
+      .deleteBtn {
+        @apply w-[100%] ml-0 mt-[15px];
+      }
+
+      .textDo {
+        @apply ml-[15px];
+      }
+    }
+  }
+}

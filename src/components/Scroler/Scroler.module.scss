@@ -1,0 +1,24 @@
+.scroler {
+  position: fixed;
+  z-index: 3;
+  top: 94%;
+  left: 93%;
+  background: #FFF;
+  padding: 3px 10px;
+  border: 1.5px solid #000;
+  border-radius: 10px;
+  transition: .4s;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.02);
+  }
+}
+
+.show {
+  top: 94%;
+}
+
+.hide {
+  top: 120%;
+}
